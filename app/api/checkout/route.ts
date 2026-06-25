@@ -82,10 +82,8 @@ export async function POST(req: NextRequest) {
 
     return NextResponse.json({ url: session.url })
   } catch (err) {
-    console.error('Stripe error:', err)
-    return NextResponse.json(
-      { error: 'Erreur lors de la création de la session de paiement.' },
-      { status: 500 }
-    )
+    const msg = err instanceof Error ? err.message : String(err)
+    console.error('Stripe error:', msg)
+    return NextResponse.json({ error: msg }, { status: 500 })
   }
 }
