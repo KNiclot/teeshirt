@@ -18,7 +18,7 @@ export default function PanierPage() {
       <div className="pt-32 min-h-screen flex flex-col items-center justify-center text-center px-4">
         <div className="text-7xl mb-6">🛒</div>
         <h1 className="font-display text-5xl text-white mb-4">Panier vide</h1>
-        <p className="text-zinc-500 mb-8">Tu n'as encore rien ajouté. C'est le moment.</p>
+        <p className="text-zinc-500 mb-8">Tu n&apos;as encore rien ajouté. C&apos;est le moment.</p>
         <Link href="/catalogue" className="btn-primary">Voir le catalogue</Link>
       </div>
     )

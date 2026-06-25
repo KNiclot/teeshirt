@@ -2,9 +2,11 @@ import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 import type { CartItem } from '@/lib/cart'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? '', {
-  apiVersion: '2026-06-24.dahlia' as const,
-})
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY ?? 'sk_placeholder', {
+    apiVersion: '2026-06-24.dahlia' as const,
+  })
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -16,7 +18,7 @@ export async function POST(req: NextRequest) {
 
     const baseUrl = process.env.NEXT_PUBLIC_URL ?? 'http://localhost:3000'
 
-    const session = await stripe.checkout.sessions.create({
+    const session = await getStripe().checkout.sessions.create({
       payment_method_types: ['card'],
       locale: 'fr',
       line_items: items.map((item) => ({

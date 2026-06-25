@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY ?? '', {
-  apiVersion: '2026-06-24.dahlia' as const,
-})
+function getStripe() {
+  return new Stripe(process.env.STRIPE_SECRET_KEY ?? 'sk_placeholder', {
+    apiVersion: '2026-06-24.dahlia' as const,
+  })
+}
 
 async function createPrintfulOrder(
   sessionData: Stripe.Checkout.Session,
@@ -62,7 +64,7 @@ export async function POST(req: NextRequest) {
   let event: Stripe.Event
 
   try {
-    event = stripe.webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET ?? '')
+    event = getStripe().webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET ?? '')
   } catch (err) {
     console.error('Webhook signature error:', err)
     return NextResponse.json({ error: 'Invalid signature' }, { status: 400 })

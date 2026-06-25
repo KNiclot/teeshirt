@@ -132,7 +132,7 @@ export default function ProduitPage() {
               {product.titre}
             </h1>
             <blockquote className="border-l-2 border-[#FFD700] pl-4 text-zinc-400 italic text-lg mb-6">
-              "{product.phrase}"
+              &quot;{product.phrase}&quot;
             </blockquote>
 
             {/* Prix */}

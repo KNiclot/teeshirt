@@ -58,7 +58,7 @@ function ConfirmationContent() {
           Continuer mes achats
         </Link>
         <Link href="/" className="btn-secondary px-10 py-4">
-          Retour à l'accueil
+          Retour à l&apos;accueil
         </Link>
       </div>
     </div>

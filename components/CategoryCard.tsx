@@ -5,7 +5,7 @@ import { CATEGORIES_META } from '@/lib/products'
 interface Props {
   categorie: Categorie
   count: number
-  index: number
+  index?: number
 }
 
 const BG_PATTERNS: Record<string, string> = {
@@ -20,7 +20,7 @@ const ACCENT_COLORS: Record<string, string> = {
   mecanique: '#FFD700',
 }
 
-export default function CategoryCard({ categorie, count, index }: Props) {
+export default function CategoryCard({ categorie, count }: Props) {
   const meta = CATEGORIES_META[categorie]
   const accent = ACCENT_COLORS[categorie]
 
