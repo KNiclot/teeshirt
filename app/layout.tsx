@@ -23,6 +23,9 @@ export const metadata: Metadata = {
     'T-shirts humoristiques premium pour les pros du bâtiment, de la route et de la mécanique. Pour ceux qui construisent le monde avec leurs mains.',
   keywords:
     'tshirt btp, tshirt plombier, tshirt maçon, tshirt électricien, tshirt routier, tshirt mécanicien',
+}
+
+export const viewport = {
   themeColor: '#0A0A0A',
 }
 
