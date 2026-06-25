@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-white;
+    font-family: 'Arial Black', 'Arial', sans-serif;
+  }
+
+  h1, h2, h3 {
+    @apply font-black uppercase tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-[#FFD700] text-black font-black uppercase tracking-widest px-6 py-3 hover:bg-[#FF6B00] hover:text-white transition-all duration-200 text-sm inline-block;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-[#FFD700] text-[#FFD700] font-black uppercase tracking-widest px-6 py-3 hover:bg-[#FFD700] hover:text-black transition-all duration-200 text-sm inline-block;
+  }
+
+  .badge-classique {
+    @apply bg-zinc-700 text-white text-xs font-black uppercase tracking-widest px-2 py-1;
+  }
+
+  .badge-premium {
+    @apply bg-[#FFD700] text-black text-xs font-black uppercase tracking-widest px-2 py-1;
+  }
+
+  .card-product {
+    @apply bg-zinc-900 border border-zinc-800 hover:border-[#FFD700] transition-all duration-300 cursor-pointer;
+  }
+}
