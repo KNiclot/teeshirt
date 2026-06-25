@@ -18,7 +18,7 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'ProTee — T-Shirts Métiers BTP, Route & Mécano',
+  title: 'LeTeeshirtDuPro.fr — T-Shirts Métiers BTP, Route & Mécano',
   description:
     'T-shirts humoristiques premium pour les pros du bâtiment, de la route et de la mécanique. Pour ceux qui construisent le monde avec leurs mains.',
   keywords:

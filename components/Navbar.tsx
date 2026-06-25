@@ -38,10 +38,10 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 bg-[#FFD700] flex items-center justify-center group-hover:bg-[#FF6B00] transition-colors duration-200">
-            <span className="text-black font-black text-xs">PT</span>
+            <span className="text-black font-black text-xs">TP</span>
           </div>
           <span className="font-display text-2xl text-white tracking-wider group-hover:text-[#FFD700] transition-colors duration-200">
-            ProTee
+            LeTeeshirtDuPro
           </span>
         </Link>
 

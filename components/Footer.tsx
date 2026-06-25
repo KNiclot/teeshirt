@@ -12,9 +12,9 @@ export default function Footer() {
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-8 h-8 bg-[#FFD700] flex items-center justify-center">
-                <span className="text-black font-black text-xs">PT</span>
+                <span className="text-black font-black text-xs">TP</span>
               </div>
-              <span className="font-display text-2xl tracking-wider">ProTee</span>
+              <span className="font-display text-2xl tracking-wider">LeTeeshirtDuPro</span>
             </div>
             <p className="text-zinc-500 text-sm leading-relaxed">
               Pour ceux qui construisent le monde avec leurs mains.
@@ -110,7 +110,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-[#2A2A2A] mt-12 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-zinc-600 text-xs">
-            © {new Date().getFullYear()} ProTee. Tous droits réservés.
+            © {new Date().getFullYear()} LeTeeshirtDuPro.fr. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             {['Mentions légales', 'CGV', 'Confidentialité'].map((l) => (
