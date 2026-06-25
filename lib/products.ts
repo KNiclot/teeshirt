@@ -80,7 +80,7 @@ export const products: Product[] = [
     metier: 'électricien',
     prix: 19.99,
     printfulId: 'printful-electricien-classique',
-    couleurs: ['noir', 'jaune', 'gris'],
+    couleurs: ['noir', 'gris'],
     tailles: ['S', 'M', 'L', 'XL', 'XXL'],
   },
   {
