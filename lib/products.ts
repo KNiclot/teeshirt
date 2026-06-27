@@ -122,6 +122,18 @@ export const products: Product[] = [
     bestseller: true,
   },
   {
+    slug: 'plombier-ex-tuyaux',
+    titre: 'Mon ex m\'a quitté, mes tuyaux jamais',
+    phrase: 'Mon ex m\'a quitté, mes tuyaux jamais',
+    gamme: 'premium',
+    categorie: 'batiment',
+    metier: 'plombier',
+    prix: 24.90,
+    printfulId: '443008651',
+    couleurs: ['noir', 'blanc', 'gris'],
+    tailles: ['S', 'M', 'L', 'XL', 'XXL'],
+  },
+  {
     slug: 'fier-detre-charpentier',
     titre: 'Fier d\'être Charpentier',
     phrase: 'Fier d\'être Charpentier',
