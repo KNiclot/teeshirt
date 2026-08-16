@@ -86,7 +86,7 @@ export default function Home() {
         <div className="flex animate-ticker whitespace-nowrap">
           {Array(8).fill(null).map((_, i) => (
             <span key={i} className="text-black font-black text-sm uppercase tracking-widest px-10">
-              🔨 Classique 19,99€ &nbsp;·&nbsp; ⭐ Premium 29,90€ &nbsp;·&nbsp; Impression FR &nbsp;·&nbsp; Livraison 48h &nbsp;·&nbsp;
+              🔨 T-shirts à 24,99€ &nbsp;·&nbsp; 🏗️ Impression FR &nbsp;·&nbsp; ⚡ Expédition 48h &nbsp;·&nbsp; 🔧 Qualité pro garantie &nbsp;·&nbsp;
             </span>
           ))}
         </div>
@@ -154,7 +154,7 @@ export default function Home() {
           <ScrollReveal>
             <div className="bg-[#141414] border border-[#2A2A2A] p-8 h-full">
               <span className="badge-classique mb-4 inline-block">Classique</span>
-              <div className="font-display text-6xl text-white mt-4 mb-2">19,99€</div>
+              <div className="font-display text-6xl text-white mt-4 mb-2">24,99€</div>
               <p className="text-zinc-500 text-sm mb-8">Design simple, phrase courte, impact immédiat</p>
               <ul className="space-y-3 mb-8">
                 {['"Fier d\'être Maçon"', '"Papa Électricien"', 'T-shirt qualité standard', 'Tailles S à XXL', 'Noir, blanc, gris'].map((item) => (
@@ -173,7 +173,7 @@ export default function Home() {
                 <span className="badge-premium">⭐ Premium</span>
                 <span className="text-[#FF6B00] text-xs font-bold uppercase tracking-widest">Le plus populaire</span>
               </div>
-              <div className="font-display text-6xl text-[#FFD700] mt-4 mb-2">29,90€</div>
+              <div className="font-display text-6xl text-[#FFD700] mt-4 mb-2">24,99€</div>
               <p className="text-zinc-400 text-sm mb-8">Design élaboré avec illustration du métier</p>
               <ul className="space-y-3 mb-8">
                 {['"Assez fou pour être plombier..."', '"La route est mon royaume"', 'T-shirt qualité supérieure', 'Tailles S à XXL', 'Illustration exclusive du métier'].map((item) => (
