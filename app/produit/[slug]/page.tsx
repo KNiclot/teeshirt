@@ -140,9 +140,6 @@ export default function ProduitPage() {
               <span className="font-display text-6xl text-white">
                 {product.prix.toFixed(2).replace('.', ',')}€
               </span>
-              {product.gamme === 'premium' && (
-                <span className="text-zinc-500 text-sm line-through">39,90€</span>
-              )}
             </div>
 
             {/* Couleur */}
